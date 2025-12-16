@@ -1,0 +1,91 @@
+/* Reset generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7397DA; /* Il blu di sfondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+/* Container principale */
+.card {
+    background-color: rgba(59, 83, 179, 0.95);
+    width: 390px;
+    padding: 40px 30px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.header h1 {
+    font-family: "Jockey One", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #8E87F2;
+    font-style: italic;
+    margin-top: -5px;
+    margin-bottom: 40px;
+}
+
+/* Bottoni */
+.btn {
+    display: flex;
+    align-items: center; /* Centra verticalmente icona e testo */
+    width: 100%;
+    height: 65px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effetto Hover: Ingrandimento */
+.btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Effetto Click: Pressione */
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Colori specifici */
+.discord { background-color: #7B7DDB; }
+.telegram { background-color: #3A74CC; }
+.github { background-color: #1F1E1E; }
+
+/* Icone */
+.btn img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block; /* Evita spazi bianchi sotto l'immagine */
+}
+
+/* Testo del bottone */
+.btn span {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1; /* Fix per il testo sceso */
+    margin-right: 32px; /* Bilancia l'ingombro dell'icona a sinistra */
+}
