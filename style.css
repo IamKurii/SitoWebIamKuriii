@@ -18,10 +18,12 @@ body {
 /* Container principale */
 .card {
     background-color: rgba(59, 83, 179, 0.95);
-    width: 390px;
+    width: 450px;
+    height: 700px;
     padding: 40px 30px;
-    border-radius: 40px;
+    border-radius: 20px;
     text-align: center;
+    align-items: center;
     box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
 }
 
@@ -38,14 +40,15 @@ body {
     color: #8E87F2;
     font-style: italic;
     margin-top: -5px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 /* Bottoni */
 .btn {
     display: flex;
     align-items: center; /* Centra verticalmente icona e testo */
-    width: 100%;
+    justify-content: center;
+    width: 300px;
     height: 65px;
     margin-bottom: 20px;
     padding: 0 20px;
@@ -58,7 +61,7 @@ body {
 
 /* Effetto Hover: Ingrandimento */
 .btn:hover {
-    transform: scale(1.04);
+    transform: scale(1.09);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -74,8 +77,8 @@ body {
 
 /* Icone */
 .btn img {
-    width: 32px;
-    height: 32px;
+    width: 45px;
+    height: 45px;
     object-fit: contain;
     display: block; /* Evita spazi bianchi sotto l'immagine */
 }
@@ -89,3 +92,19 @@ body {
     line-height: 1; /* Fix per il testo sceso */
     margin-right: 32px; /* Bilancia l'ingombro dell'icona a sinistra */
 }
+
+.img-profile{
+    border-radius: 25px;
+    border-color: #1a50a1;
+    border: 2px solid #1a8da1;
+    width: 120px;
+}
+
+.buttons-container{
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
